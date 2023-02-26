@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /cat.jpg
+heroImage: https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8412ecb9f6d401587097529571f6045~tplv-k3u1fbpfcp-watermark.image?
 heroImageStyle: {
   maxHeight: '330px',
   maxWidth: '100%',

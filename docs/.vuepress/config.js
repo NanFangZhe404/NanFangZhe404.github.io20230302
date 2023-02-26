@@ -57,20 +57,14 @@ module.exports = {
     noFoundPageByTencent: true, // 关闭 404 腾讯公益
     author: 'github.com/tea-blog',
     modePicker: false, // 不显示模式调节按钮（true 显示）
-    startYear: '2022',
+    startYear: 'NaN',
     nav: [{
         text: "✍️总览",
         link: "/sort/all.html",
         // icon: 'reco-blog'
       }, {
         text: '🕙时间分类',
-        items: [{
-    text: '2023',
-        link: '/categories/2023/'
-    }, {
-    text: '2022',
-        link: '/categories/2022/'
-    }, ]
+        items: []
         // [{
         //     text: '2022',
         //     link: '/categories/2022/'
