@@ -1,0 +1,46 @@
+name: Tea-Blog-Catch
+on:
+  # 设置可以手动执行(参考：https://tongjunsz.gitee.io/2021/03/18/GitHub-Actions-%E6%89%8B%E5%8A%A8%E8%A7%A6%E5%8F%91%E6%96%B9%E5%BC%8F/)
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+  # 每天下午四点执行（需要-8小时）
+  schedule:
+    - cron: "0 8 * * *"
+
+jobs:
+  Tea-Blog-Catch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codes
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+
+        with:
+          node-version: "14.x"
+
+      - name: Run
+
+        run: npm install
+
+      - run: node CatchMain.js ${{ secrets.JUEJIN_USER_ID }} ${{ secrets.JUEJIN_COLUMN_ID }}
+        # env:
+        #   botapi: ${{ secrets.botapi }}
+        #   chatid: ${{ secrets.chatid }}
+
+      - name: Upload to this repo
+
+        run: |
+
+          git config --global user.name "tea-blog"
+
+          git config --global user.email "nanfangzhe@qq.com"
+
+          git add .
+
+          git commit -m 'upload Work-Day-Tea-Blog'
+
+          git push -u origin main
