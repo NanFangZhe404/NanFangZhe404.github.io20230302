@@ -18,5 +18,5 @@ features:
   details: 做个精选文章的数据库
 - title: 工作日陪伴🚥
   details: 工作日进行发布，更新
-link: "https://juejin.cn/user/2840793779295133"
+link: "https://juejin.cn/user/2819602825362840"
 ---

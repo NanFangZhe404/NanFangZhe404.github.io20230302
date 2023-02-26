@@ -5,7 +5,7 @@ module.exports = {
       lang: 'zh-CN' // 这里修改中文
     }
   },
-  title: "南方者的文章合集",
+  title: "酱酱们的每日掘金的文章合集",
   description: "精选文章，每日掘金，工作日陪伴，文章数据库", // meta 中的描述文字，用于SEO
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['meta', {
@@ -22,14 +22,14 @@ module.exports = {
     }],
     ['meta', {
       name: 'keywords',
-      content: '前端, 技术文章, 移动端, pc端, 数据库, 后端, 南方者'
+      content: '前端, 技术文章, 移动端, pc端, 数据库, 后端, 酱酱们的每日掘金'
     }],
     [
       "link",
       {
         rel: "shortcut icon ",
         type: "images/x-icon",
-        href: "https://p6-passport.byteacctimg.com/img/user-avatar/db3b09f9ca107d8843cee3fe8f4f0cd4~300x300.image"
+        href: "https://p3-passport.byteacctimg.com/img/user-avatar/b72e991ee9b1c9bdca7b2bd4c8dc78a8~300x300.image"
       },
     ],
     [
@@ -52,12 +52,12 @@ module.exports = {
   },
   theme: 'reco',
   themeConfig: { // 博客配置
-    logo: 'https://p6-passport.byteacctimg.com/img/user-avatar/db3b09f9ca107d8843cee3fe8f4f0cd4~300x300.image',
+    logo: 'https://p3-passport.byteacctimg.com/img/user-avatar/b72e991ee9b1c9bdca7b2bd4c8dc78a8~300x300.image',
     // authorAvatar: '/avatar.png',
     noFoundPageByTencent: true, // 关闭 404 腾讯公益
     author: 'github.com/tea-blog',
     modePicker: false, // 不显示模式调节按钮（true 显示）
-    startYear: '2021',
+    startYear: '2022',
     nav: [{
         text: "✍️总览",
         link: "/sort/all.html",
@@ -70,9 +70,6 @@ module.exports = {
     }, {
     text: '2022',
         link: '/categories/2022/'
-    }, {
-    text: '2021',
-        link: '/categories/2021/'
     }, ]
         // [{
         //     text: '2022',
@@ -86,11 +83,11 @@ module.exports = {
       },
       {
         text: "👣找到我",
-        link: "https://juejin.cn/user/2840793779295133",
+        link: "https://juejin.cn/user/2819602825362840",
       },
       {
         text: "💌订阅",
-        link: "https://juejin.cn/user/2840793779295133/columns",
+        link: "https://juejin.cn/column/7107151273765371941",
       },
       {
         text: "🐛源码",
