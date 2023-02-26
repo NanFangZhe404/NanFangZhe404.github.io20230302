@@ -92,9 +92,13 @@ async function initVuepress(user_id, column_id, articleMap, article) {
         var {
             article_info
         } = article;
-        cover_png = article_info.cover_png; // 专栏导图（有可能没有）
+        // console.log(article)
+        // console.log(article_info)
+        cover_png = article_info.cover_image; // 专栏导图（有可能没有）
     }
     userBean.cover_png = cover_png;
+    // console.log(userBean)
+    // return;
     VuepressUtils.initREADME(userBean); // 初始化 vuepress 的 README 文件
 
     // 添加分类（按年的分类）
