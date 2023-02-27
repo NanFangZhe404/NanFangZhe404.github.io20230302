@@ -1,4 +1,4 @@
-name: Tea-Blog-Catch
+name: blog-catch-and-pages
 on:
   # 设置可以手动执行(参考：https://tongjunsz.gitee.io/2021/03/18/GitHub-Actions-%E6%89%8B%E5%8A%A8%E8%A7%A6%E5%8F%91%E6%96%B9%E5%BC%8F/)
   workflow_dispatch:
