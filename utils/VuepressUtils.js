@@ -101,6 +101,9 @@ const initConfig = (replaceConfigData) => {
 // return;
 const userUrl = "https://api.juejin.cn/user_api/v1/user/get";
 
+const isInit = () => { // 是否已经初始化
+    return fs.existsSync(configFilePath);
+}
 
 async function getJuejinUserInfo(user_id) {
     var data = {
@@ -134,4 +137,5 @@ module.exports = {
     getJuejinUserInfo,
     initREADME,
     initConfig,
+    isInit,
 }

@@ -76,6 +76,10 @@ async function catchTxt() {
 
 // 初始化 vuepress 相关配置的生成（和 user_id 和 column_id 关联）
 async function initVuepress(user_id, column_id, articleMap, article) {
+    if (VuepressUtils.isInit()) { // 如果已经存在这个配置文件就不再创建了
+        return;
+    }
+
     var userBean = await VuepressUtils.getJuejinUserInfo(user_id);
     var yyMap = new Map(); // 年月日的已经排序好，不过是倒序的，所以遍历一般好让年月的时间正序起来
     var yyList = [];
