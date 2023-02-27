@@ -44,16 +44,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.PRESS_TOKEN_JUEJIN_BLOG }}
           BRANCH: gh-pages
           FOLDER: docs/.vuepress/dist
-      - name: Remove and git pdate
-        run: |
-          rm -rf docs/sort
-
-          git config --global user.name "tea-blog"
-
-          git config --global user.email "nanfangzhe@qq.com"
-
-          git add .
-
-          git commit -m 'remove docs/sort'
-
-          git push -u origin main
