@@ -6,12 +6,12 @@ on:
     branches:
       - master
 
-  # 每天下午四点执行（需要-8小时）
+  # 每天下午四点执行（也就是16点，需要-8小时，所以是8）
   schedule:
     - cron: "0 8 * * *"
 
 jobs:
-  Tea-Blog-Catch:
+  blog-catch-and-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codes
@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: Run
+      - name: install and run
 
         run: npm install
 
