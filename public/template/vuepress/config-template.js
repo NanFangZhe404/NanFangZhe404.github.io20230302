@@ -6,7 +6,7 @@ module.exports = {
     }
   },
   title: "{{user_name}}的文章合集",
-  description: "精选文章，每日掘金，工作日陪伴，文章数据库", // meta 中的描述文字，用于SEO
+  description: "自动化同步，精选文章，每日文章，工作日陪伴，{{user_name}}文章数据库", // meta 中的描述文字，用于SEO
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['meta', {
       name: 'viewport',
@@ -36,6 +36,13 @@ module.exports = {
       "script",
       {},
       `{{baidu_coutn_url}}`
+    ],
+    [
+      "script",
+      {
+        id: "mcjs",
+      },
+      `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b3fad304371174db0529ba6ac/c48d1585343892285d944be67.js");`
     ],
   ],
   serviceWorker: true, // 是否开启 PWA
