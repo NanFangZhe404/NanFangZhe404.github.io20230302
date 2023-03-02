@@ -111,7 +111,7 @@ http://localhost:8080/
 欢迎各位英雄豪杰加入，共建更完美的**自动化同步文章平台（auto-sync-blog）**。
 
 ## 问题回答（Question & Answer）
-<a title="Q&A" href="Q&A.md">Question & Answer</a>
+<a title="Q&A" href="https://github.com/tea-blog/tea-blog.github.io/Q&A.md">Question & Answer</a>
 
 ## License
 tea-blog.github.io is under the GPL license.
