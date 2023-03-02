@@ -25,7 +25,7 @@
     | JUEJIN_COLUMN_ID        | 掘金专栏id                                                    | 是       |
     | PRESS_TOKEN_JUEJIN_BLOG | GitHub Personal access tokens，用户推送仓库，同步GitHub pages | 是       |
 
-4. 仓库 -> Actions, 检查 Workflows 并启用。
+3. 仓库 -> Actions, 检查 Workflows 并启用。
 
 ### 本地部署流程（Be Developer）
 
